@@ -343,7 +343,7 @@ Transform:
   m_GameObject: {fileID: 1685398559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.7184, y: 0, z: 0}
-  m_LocalScale: {x: 7.0359716, y: 1, z: 1}
+  m_LocalScale: {x: 119.61152, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 1887093602}
   - component: {fileID: 1887093601}
   - component: {fileID: 1887093600}
+  - component: {fileID: 1887093605}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -386,6 +387,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  animator: {fileID: 1887093605}
   movementSpeed: 8
   jumpingPower: 8
 --- !u!50 &1887093601
@@ -418,7 +420,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1887093599}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: eb8369471bfbc034c910018e9d5cb7ea, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -503,3 +505,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1887093605
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887093599}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a9276a23b926bb41bd748f2fea2f1ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
