@@ -7,7 +7,9 @@ public class PlayerController : MonoBehaviour
      [SerializeField] private Rigidbody2D rb;
      [SerializeField] private Transform groundCheck;
      [SerializeField] private LayerMask groundLayer;
-     
+
+    public Animator animator;
+
 
     private float x_axis;
     public float movementSpeed= 8f;
@@ -17,15 +19,15 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         x_axis = Input.GetAxisRaw("Horizontal");
-
+        animator.SetFloat("Speed", Mathf.Abs(x_axis));
         Jump();
-
         Flip();
     }
 
     private void FixedUpdate()
     {
        rb.velocity  = new Vector2(x_axis * movementSpeed, rb.velocity.y);
+   
     }
 
     private bool IsGrounded()
