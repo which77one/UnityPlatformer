@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer tr;
 
-
+    protected Collider2D col;
     public Animator animator;
     
 
@@ -18,19 +18,11 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 8f;
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
+    [SerializeField] protected float distanceToCollider = .02f;
+    //The layers the player should check and see for movement restrictions
+    [SerializeField] protected LayerMask collisionLayer;
+    private float horizontalInput;
 
-
-    //Jumping with force
-    public float jumpHeight;
-    public float runMaxSpeed; //Target speed we want the player to reach.
-    public float runAcceleration; //Time (approx.) time we want it to take for the player to accelerate from 0 to the runMaxSpeed.
-    [HideInInspector] public float runAccelAmount; //The actual force (multiplied with speedDiff) applied to the player.
-    public float runDecceleration; //Time (approx.) we want it to take for the player to accelerate from runMaxSpeed to 0
-    [HideInInspector] public float runDeccelAmount; //Actual force (multiplied with speedDiff) applied to the player .
-    [Range(0.01f, 1)] public float accelInAir; //Multipliers applied to acceleration rate when airborne.
-    [Range(0.01f, 1)] public float deccelInAir;
-    public bool doConserveMomentum;
-    public float LastOnGroundTime;
 
     //Dash
     private bool canDash = true;
@@ -45,8 +37,14 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+       if  (Input.GetAxisRaw("Horizontal") != 0)
+        {
         x_axis = Input.GetAxisRaw("Horizontal");
-        LastOnGroundTime -= Time.deltaTime;
+        }
+       else
+        {
+            x_axis = 0;
+        }
         if (isDashing)
         {
             return;
@@ -60,10 +58,7 @@ public class PlayerController : MonoBehaviour
         }
        
         
-        if (IsGrounded())
-        {
-            LastOnGroundTime = 0.1f;
-        }
+        
     }
 
     private void FixedUpdate()
@@ -72,9 +67,34 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        rb.velocity = new Vector2(x_axis * movementSpeed, rb.velocity.y);
-        JumpingMomentum();
+        rb.velocity = new Vector2(x_axis * movementSpeed , rb.velocity.y);
+        SpeedModifier();
 
+    }
+    protected virtual bool CollisionCheck(Vector2 direction, float distance, LayerMask collision)
+    {
+        //Sets up an array of hits so if the player is colliding with multiple objects, it can sort through each one to look for one it should
+        RaycastHit2D[] hits = new RaycastHit2D[10];
+        //An int to help sort the hits variable so the Character can run a for loop and check the values of each collision
+        int numHits = col.Cast(direction, hits, distance);
+        //For loop that sorts hits with the int value it receives based on the Collider2D.Cast() method
+        for (int i = 0; i < numHits; i++)
+        {
+            if ((1 << hits[i].collider.gameObject.layer & collision) != 0)
+            {  
+                return true;
+            }
+        }
+        return false;
+    }
+    private void SpeedModifier()
+    {
+        //Long if statement that checks to see if character is jumping or falling and running into a wall
+        if((rb.velocity.x > 0 && CollisionCheck(Vector2.right, distanceToCollider, collisionLayer)) || (rb.velocity.x < 0 && CollisionCheck(Vector2.left, distanceToCollider, collisionLayer)) && IsGrounded())
+        {
+            //Sets a very small horizontal velocity value so the player can naturally fall if touching a wall while jumping
+            rb.velocity = new Vector2(.01f, rb.velocity.y);
+        }
     }
 
     private bool IsGrounded()
@@ -101,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * jumpHeight);
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
     }
 
@@ -120,32 +140,8 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
-    private void OnValidate()
-    {
-        //Calculate are run acceleration & deceleration forces using formula: amount = ((1 / Time.fixedDeltaTime) * acceleration) / runMaxSpeed
-        runAccelAmount = (50 * runAcceleration) / runMaxSpeed;
-        runDeccelAmount = (50 * runDecceleration) / runMaxSpeed;
-            
-        runAcceleration = Mathf.Clamp(runAcceleration, 0.01f, runMaxSpeed);
-        runDecceleration = Mathf.Clamp(runDecceleration, 0.01f, runMaxSpeed);
-        
-    }
-    private void JumpingMomentum()
-    {
-        float targetSpeed = x_axis * runMaxSpeed;
-        float accelRate;
-        if (LastOnGroundTime > 0)
-            accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? runAccelAmount : runDeccelAmount;
-        else
-            accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? runAccelAmount * accelInAir : runDeccelAmount * deccelInAir;
-        if (doConserveMomentum && Mathf.Abs(rb.velocity.x) > Mathf.Abs(targetSpeed) && Mathf.Sign(rb.velocity.x) == Mathf.Sign(targetSpeed) && Mathf.Abs(targetSpeed) > 0.01f && LastOnGroundTime < 0)
-        {
-            //Prevent any deceleration from happening, or in other words conserve are current momentum
-
-            accelRate = 0;
-        }
-        float speedDif = targetSpeed - rb.velocity.x;
-        float movement = speedDif * accelRate;
-        rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
-    }
+    
+    
+    
 }
+
