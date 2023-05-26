@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 8f;
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
+<<<<<<< Updated upstream
     [SerializeField] protected float distanceToCollider = .02f;
     //The layers the player should check and see for movement restrictions
     [SerializeField] protected LayerMask collisionLayer;
@@ -34,6 +35,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
 
+=======
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+>>>>>>> Stashed changes
     }
     void Update()
     {
