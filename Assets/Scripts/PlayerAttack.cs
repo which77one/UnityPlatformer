@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     private bool attacking = false;
     private float timetoAttack = 0.25f;
     private float timer = 0f;
+    public Animator anim;
 
     void Start()
     {
@@ -18,15 +19,17 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Attack();
+            
         }
         if (attacking)
         {
             timer += Time.deltaTime;
-            if(timer >= timetoAttack)
+            if (timer >= timetoAttack)
             {
                 timer = 0;
                 attacking = false;
                 attackArea.SetActive(attacking);
+                
             }
         }
     }
@@ -34,5 +37,7 @@ public class PlayerAttack : MonoBehaviour
     {
         attacking = true;
         attackArea.SetActive(attacking);
+        anim.SetTrigger("Attack");
+
     }
 }
