@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,20 +13,18 @@ public class Health : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
-    
-    private int MAX_HEALTH = 100;
 
-    // Update is called once per frame
+    private int MAX_HEALTH = 100;
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            // Heal(10);
-        }
+
+        //if (Input.GetKeyDown(KeyCode.H))
+        //{
+        //    Heal(10);
+        //}
         HeartIcon();
     }
-    
+
 
     public void SetHealth(int maxHealth, int health)
     {
@@ -35,45 +34,20 @@ public class Health : MonoBehaviour
 
     public void Damage(int amount)
     {
-        if(amount < 0)
+        if (amount < 0)
         {
             throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
         }
 
         this.health -= amount;
 
-        if(health <= 0)
+        if (health <= 0)
         {
             Die();
         }
     }
-
-    /*public void Heal(int amount)
+    public void HeartIcon()
     {
-        if (amount < 0)
-        {
-            throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
-        }
-
-        bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
-
-        if (wouldBeOverMaxHealth)
-        {
-            this.health = MAX_HEALTH;
-        }
-        else
-        {
-            this.health += amount;
-        }
-    }*/
-
-    private void Die()
-    {
-        Destroy(gameObject);
-    }
-    private void HeartIcon()
-    {
-        {
         if (health > numOfHearts)
         {
             health = numOfHearts;
@@ -97,7 +71,33 @@ public class Health : MonoBehaviour
             {
                 hearts[i].enabled = false;
             }
+
         }
     }
+    private void Die()
+    {
+        Destroy(gameObject);
     }
+    /*public void Heal(int amount)
+    {
+        if (amount < 0)
+        {
+            throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
+        }
+
+        bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
+
+        if (wouldBeOverMaxHealth)
+        {
+            this.health = MAX_HEALTH;
+        }
+        else
+        {
+            this.health += amount;
+        }
+    }*/
+
+
+
+
 }
