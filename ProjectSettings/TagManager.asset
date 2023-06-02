@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - enemy
-  - Ladder
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -13,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Background
+  - 
+  - 
   - 
   - 
   - 
@@ -42,28 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: BackGround
-    uniqueID: 666960859
-    locked: 0
-  - name: Trees
-    uniqueID: 2754547601
-    locked: 0
-  - name: TreeHouse
-    uniqueID: 968935189
-    locked: 0
-  - name: Object
-    uniqueID: 534061567
-    locked: 0
-  - name: Gem
-    uniqueID: 1037643105
-    locked: 0
-  - name: Player
-    uniqueID: 1018632301
-    locked: 0
-  - name: SecretBush
-    uniqueID: 2276649643
-    locked: 0
-  - name: Ground
-    uniqueID: 779246567
     locked: 0

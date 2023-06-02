@@ -18,11 +18,7 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            // Damage(10);
-        }
-
+        
         if (Input.GetKeyDown(KeyCode.H))
         {
             // Heal(10);
@@ -52,7 +48,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void Heal(int amount)
+    /*public void Heal(int amount)
     {
         if (amount < 0)
         {
@@ -69,7 +65,7 @@ public class Health : MonoBehaviour
         {
             this.health += amount;
         }
-    }
+    }*/
 
     private void Die()
     {
