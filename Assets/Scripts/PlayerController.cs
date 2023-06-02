@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 8f;
 
     //Jump
-    public float jumpingPower = 16f;
+    public float jumpingPower = 20f;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
     public float jumpVelocity = 2f;
@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     private void Flip()

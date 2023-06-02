@@ -9,8 +9,8 @@ public class AttackArea : MonoBehaviour
     {
         if (col.CompareTag("enemy"))
         {
-            enemyHealth enemyHealth = col.GetComponent<enemyHealth>();
-            enemyHealth.Damage(damage);
+            Health Health = col.GetComponent<Health>();
+            Health.Damage(damage);
         }
     }
 }
