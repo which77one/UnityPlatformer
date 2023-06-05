@@ -16,7 +16,6 @@ public class BackGround : MonoBehaviour
 
     void Update()
     {
-
         offset += (Time.deltaTime * Speed) / 10;
         mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
     }

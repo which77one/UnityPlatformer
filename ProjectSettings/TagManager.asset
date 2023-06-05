@@ -13,8 +13,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Enemy
   - 
   - 
   - 
@@ -52,12 +52,15 @@ TagManager:
   - name: Object
     uniqueID: 4091654945
     locked: 0
-  - name: Player
-    uniqueID: 3379596063
-    locked: 0
   - name: Special Object
     uniqueID: 2605312249
     locked: 0
+  - name: Player
+    uniqueID: 3379596063
+    locked: 0
   - name: Ground
     uniqueID: 857249095
+    locked: 0
+  - name: Ladder
+    uniqueID: 1411162765
     locked: 0

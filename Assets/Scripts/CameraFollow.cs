@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour
 {
     // Start is called before the first frame update
     public float FollowSpeed = 2f;
-    public float yOffset = 1f;
+    public float yOffset = 2f;
     public Transform target;
 
     // Update is called once per frame
