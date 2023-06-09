@@ -23,6 +23,7 @@ public class EnemyTakingDamage : MonoBehaviour
 
         // play animation 
         animTakingDamage.SetTrigger("isTakingDamage");
+
         
         if (currentHealth <= 0)
         {

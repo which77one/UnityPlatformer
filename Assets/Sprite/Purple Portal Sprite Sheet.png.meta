@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: ebb5ed360343ce94d878596034b548be
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 134
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4c7fb4c35eab740adecb7b778015e5
+      internalID: -1805752314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 135
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb0f28ba74f1d740bf99f9c2279588d
+      internalID: -1568432676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 135
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c17e22e892cd96488dd4b8dfdde991f
+      internalID: -421345518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 135
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d65bb9e15ef3e46ab61028248f5688
+      internalID: -1188293753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 135
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1b6cb99551c904eabd1e9a2697148b
+      internalID: 717009774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 132
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3644bfe03db8ce040af434634f440e16
+      internalID: 796602464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 135
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a3fb1fec0930f429266932eca92307
+      internalID: -706814379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 135
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e21c67b233b05847a0ce45f53dd0ddd
+      internalID: -612651364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 85
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d4b093730696f46a466cacf2a8d6c7
+      internalID: -1555202480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 77
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82077f9e288cdbb4b9271964982006f0
+      internalID: -649844276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 71
+        width: 13
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde4d6e41b2bae646b918db821497661
+      internalID: 492589908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 72
+        width: 13
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4568d478efe3ead4db609e68f1090ec3
+      internalID: 1545969948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 13
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c631a6e92a4744193a394d16c5d7f3
+      internalID: 1568754026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 21
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d35ef64d0b8ad41a04bce9bc23b66e
+      internalID: 1418210785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 27
+        width: 27
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0987cd30c524c4fac6c0ecbbca5ee9
+      internalID: 931114599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 71
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15340b334fbad1f46a6f61b56a02dccf
+      internalID: 839404017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 28
+        width: 28
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da953ba0af8811045a45dac0f2363b29
+      internalID: -366124891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 31
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0773c9dc27cc064abf8618a75268180
+      internalID: 1708231912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 30
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8277a787adb4f744b9880a116e34f566
+      internalID: 1981379867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 30
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d5f734a0d897e429d66fa64fa95463
+      internalID: -108510445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 30
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6738bfbd12675499c310bafe65d603
+      internalID: -224964047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 93
+        width: 31
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13613e084ec5c84fbe26891ffe2d583
+      internalID: 910183135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 95
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ba73b7b8f007d489df014056411f5f
+      internalID: 617241623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple Portal Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 90
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d485f102fb0a2429990170634fdc77
+      internalID: 1128649477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Purple Portal Sprite Sheet_0: -1805752314
+      Purple Portal Sprite Sheet_6: -706814379
+      Purple Portal Sprite Sheet_3: -1188293753
+      Purple Portal Sprite Sheet_16: 931114599
+      Purple Portal Sprite Sheet_21: -224964047
+      Purple Portal Sprite Sheet_10: -1555202480
+      Purple Portal Sprite Sheet_20: -108510445
+      Purple Portal Sprite Sheet_14: 1568754026
+      Purple Portal Sprite Sheet_12: 492589908
+      Purple Portal Sprite Sheet_23: 1128649477
+      Purple Portal Sprite Sheet_22: 617241623
+      Purple Portal Sprite Sheet_24: -1889980776
+      Purple Portal Sprite Sheet_2: -421345518
+      Purple Portal Sprite Sheet_17: -366124891
+      Purple Portal Sprite Sheet_15: 1418210785
+      Purple Portal Sprite Sheet_7: -612651364
+      Purple Portal Sprite Sheet_4: 717009774
+      Purple Portal Sprite Sheet_13: 1545969948
+      Purple Portal Sprite Sheet_1: -1568432676
+      Purple Portal Sprite Sheet_5: 796602464
+      Purple Portal Sprite Sheet_9: 839404017
+      Purple Portal Sprite Sheet_11: -649844276
+      Purple Portal Sprite Sheet_18: 1708231912
+      Purple Portal Sprite Sheet_19: 1981379867
+      Purple Portal Sprite Sheet_8: 910183135
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ladder
   - GameManager
+  - Box
+  - Flag
   layers:
   - Default
   - TransparentFX
@@ -58,9 +60,12 @@ TagManager:
   - name: Player
     uniqueID: 3379596063
     locked: 0
+  - name: Lava
+    uniqueID: 1411162765
+    locked: 0
   - name: Ground
     uniqueID: 857249095
     locked: 0
-  - name: Ladder
-    uniqueID: 1411162765
+  - name: Block
+    uniqueID: 2777271545
     locked: 0

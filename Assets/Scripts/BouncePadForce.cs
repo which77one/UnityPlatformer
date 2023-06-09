@@ -18,9 +18,5 @@ public class BouncePadForce : MonoBehaviour
             col.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * bounceForce,ForceMode2D.Impulse);
         }
     }
-    void OnTriggerExit2D(Collider2D col)
-    {
-        
-    }
-    
+     
 }

@@ -117,69 +117,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heart&ManaUi_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 38
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17225730357c9b848b4c9e76b1dd3e6f
-      internalID: -1770887603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart&ManaUi_1
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 39
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac059339da1f3bc4b9811bd7fea78d11
-      internalID: -1726973385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart&ManaUi_2
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 39
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee055e33409638d4f80079027984e903
-      internalID: -1242174666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Heart&ManaUi_3
       rect:
         serializedVersion: 2
@@ -188,7 +125,7 @@ TextureImporter:
         width: 10
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +146,7 @@ TextureImporter:
         width: 10
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,111 +154,6 @@ TextureImporter:
       bones: []
       spriteID: 17455678d2f1aa545876fd6fdcc7c175
       internalID: -1029528036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart&ManaUi_5
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 14
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a77786d6249a674693b6974acea5326
-      internalID: -116818391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart&ManaUi_6
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 14
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d38d1be3ea7928409351afa24f4e68f
-      internalID: 2005210714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart&ManaUi_7
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 14
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11a9ad8725c166246a89e858dd695654
-      internalID: -2014142212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart&ManaUi_8
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 2
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7d45639f2d502a45877542b47597a88
-      internalID: -806795935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart&ManaUi_9
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 2
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89857510c790dbf40afa15ec71afc1c7
-      internalID: 712200787
       vertices: []
       indices: 
       edges: []
@@ -338,7 +170,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Heart&ManaUi_5: -116818391
-      Heart&ManaUi_8: -806795935
+      Heart&ManaUi_0: -1770887603
       Heart&ManaUi_6: 2005210714
       Heart&ManaUi_9: 712200787
       Heart&ManaUi_1: -1726973385
@@ -346,7 +178,7 @@ TextureImporter:
       Heart&ManaUi_2: -1242174666
       Heart&ManaUi_4: -1029528036
       Heart&ManaUi_3: -832435703
-      Heart&ManaUi_0: -1770887603
+      Heart&ManaUi_8: -806795935
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

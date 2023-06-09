@@ -17,11 +17,10 @@ public class GameManager : MonoBehaviour
           instance = this;
       }
       //If instance already exists and it's not this:
-      else if (instance != this)
+      else if (instance != this  )
       {
-         Destroy(gameObject);
-      }
-
+        Destroy(gameObject);
+      }      
 
       //Sets this to not be destroyed when reloading scene
       DontDestroyOnLoad(gameObject);
@@ -30,9 +29,14 @@ public class GameManager : MonoBehaviour
   void Update()
   {
     //Checks if build index is greater than ("#") 
-    if (SceneManager.GetActiveScene ().buildIndex > 1) //if scene is > n , delete scene manager
+    if (SceneManager.GetActiveScene ().buildIndex > 10) //if scene is > n , delete scene manager
     {
-      Destroy(GameObject.FindWithTag("GameManager"));
+      
+       Destroy(GameObject.FindWithTag("GameManager"));
     }
+  }
+  void CompleteLevel()
+  {
+    Debug.Log("yay");
   }
 }
